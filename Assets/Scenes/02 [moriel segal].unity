@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 779943628}
   - component: {fileID: 779943630}
   - component: {fileID: 779943629}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BUS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87, y: 42}
+  m_AnchoredPosition: {x: 23, y: 42}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &779943629
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 3458a48c967f26e47aa6025ce9bf63a1, type: 2}
+  m_Material: {fileID: -876546973899608171, guid: a5ceed8d05c985e40ab719a0ba53cdf7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1256,8 +1256,8 @@ RectTransform:
   - {fileID: 2130407223}
   - {fileID: 1309490345}
   - {fileID: 779943628}
-  - {fileID: 742210789}
   - {fileID: 1493446374}
+  - {fileID: 742210789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1436,7 +1436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177, y: 56}
+  m_AnchoredPosition: {x: 33, y: 56}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309490346
@@ -1560,7 +1560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5, y: -20.5}
+  m_AnchoredPosition: {x: 3.4999657, y: -20.50004}
   m_SizeDelta: {x: 653, y: 779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493446375
@@ -1576,9 +1576,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarCustomizer
   carImage: {fileID: 779943629}
-  primaryColorProperty: _PrimaryColor
-  secondaryColorProperty: _SecondaryColor
+  primaryColorProperty: FIRST COLOR1
+  secondaryColorProperty: SCOUND COLOR1
   primaryColors:
+  - {r: 1, g: 1, b: 1, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
   secondaryColors:
   - {r: 0, g: 0, b: 0, a: 0}
@@ -2095,7 +2096,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
