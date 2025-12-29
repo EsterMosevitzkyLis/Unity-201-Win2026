@@ -71,18 +71,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FrasnelPower: 1.09
+    - _FrasnelPower: 1.03
     - _FrasnelTrans: 0
-    - _ImageTransparnecy: 0.14
+    - _GlitchChance: 0.1
+    - _GlitchSpeed: 1
+    - _ImageTransparnecy: 0.09
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 5.5
+    - _Speed: 7.77
     - _Transparency: 0.1
     m_Colors:
-    - _Color: {r: 0, g: 216.84703, b: 766.99615, a: 0.65882355}
-    - _Color2: {r: 1.0717738, g: 0, b: 0.5539718, a: 1}
+    - _Color: {r: 0, g: 70.41856, b: 277.61163, a: 1}
+    - _Color2: {r: 0, g: 3.4822018, b: 1.6250277, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 18.84, g: 39, b: 0, a: 0}
+    - _Tiling: {r: 18.84, g: 100, b: 0, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

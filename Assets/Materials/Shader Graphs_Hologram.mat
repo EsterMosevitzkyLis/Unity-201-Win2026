@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _HologramSprite:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Kenobee:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,9 +73,13 @@ Material:
     m_Floats:
     - _FrasnelPower: 1.36
     - _FrasnelTrans: 0
+    - _GlitchChance: 0.01
+    - _GlitchSpeed: 0.000001
+    - _ImageTransparnecy: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 3.21
+    - _Transparency: 0
     m_Colors:
     - _Color: {r: 3.9999998, g: 0, b: 2.1780107, a: 1}
     - _Color2: {r: 0, g: 1.0587192, b: 19.69831, a: 1}
