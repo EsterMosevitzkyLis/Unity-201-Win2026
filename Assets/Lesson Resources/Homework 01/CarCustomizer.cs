@@ -32,6 +32,8 @@ public class CarCustomizer : MonoBehaviour
         // Create unique instance of the material
         matInstance = Instantiate(carImage.material);
         carImage.material = matInstance;
+        SetPrimaryColorIndex(0);
+        SetSecondaryColorIndex(0);
     }
 
     public void SetPrimaryColorIndex(int index)
@@ -62,7 +64,7 @@ public class CarCustomizer : MonoBehaviour
 
         if (index < 0 || index >= palette.Length)
         {
-            Debug.LogWarning($"CarCustomizer: {label} index {index} is out of range (0–{palette.Length - 1}).", this);
+            Debug.LogWarning($"CarCustomizer: {label} index {index} is out of range (0â€“{palette.Length - 1}).", this);
             return false;
         }
 
