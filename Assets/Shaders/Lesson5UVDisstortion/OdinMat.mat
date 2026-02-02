@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6976912651246666710
+--- !u!114 &-7320883502236470292
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ThorBackGround
-  m_Shader: {fileID: -6465566751694194690, guid: b777d5cf4875eb443844ffaaa1095faf, type: 3}
+  m_Name: OdinMat
+  m_Shader: {fileID: -6465566751694194690, guid: 8d82a2d3e50d70e478e1ba93bd634ffa, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,11 +37,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3445e5c06d982a244a1e70fcc84d69a8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_557b2353a2004bbba05267e43f150d42_Texture_1_Texture2D:
+    - _SampleTexture2D_65db002975ba401e8870ec1f00bbf3b7_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 3445e5c06d982a244a1e70fcc84d69a8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -61,7 +57,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors:
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Speed: 0.15
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

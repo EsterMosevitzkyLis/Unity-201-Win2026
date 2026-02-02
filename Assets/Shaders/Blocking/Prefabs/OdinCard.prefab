@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 5644724193157764716}
   - component: {fileID: 6667196032650257543}
   m_Layer: 5
-  m_Name: Loki
+  m_Name: Odin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,14 +147,14 @@ RectTransform:
   m_GameObject: {fileID: 3621917967348825412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7475744536569538081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -191, y: -117.5}
+  m_AnchoredPosition: {x: -197, y: -117.5}
   m_SizeDelta: {x: 598, y: 1098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5644724193157764716
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 591d4896ea7b0334cb2b6b4d3ebb571d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da27e89c6d305154684796deaf89049e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200.19, y: 103.7}
+  m_AnchoredPosition: {x: -194, y: 101}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8608590028330071702
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loki the trickster
+  m_text: Odin the all father
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 460e4a9db94466f4eaf3d441db71efad, type: 2}
   m_sharedMaterial: {fileID: 483904750604888526, guid: 460e4a9db94466f4eaf3d441db71efad, type: 2}
@@ -437,8 +437,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -493,12 +493,12 @@ GameObject:
   - component: {fileID: 7566126086809036914}
   - component: {fileID: 1229179641713916448}
   m_Layer: 5
-  m_Name: LokiSymbol
+  m_Name: OdinSymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3175011898723219871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b3aba301bb2fdfd4898cfc57b002f6f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cca60597d3356e74cb0f54d3e537987d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 1005804314612351153}
   - component: {fileID: 7456296019820000537}
   m_Layer: 5
-  m_Name: LokiCard
+  m_Name: OdinCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
