@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: 73b7ec65a469a1e4f8c45c7c9f0dc0bd
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Decal_Red
+    second: {fileID: 2100000, guid: de7e2ae69d4a9494081ee7b43a8d2a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Trim_01
+    second: {fileID: 2100000, guid: bf4fd3f543d04eb41aa7dab8e9545c42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_LightFade_Red
+    second: {fileID: 2100000, guid: 6fbd85596f2be1746ba52336296383f2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -56,6 +71,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
