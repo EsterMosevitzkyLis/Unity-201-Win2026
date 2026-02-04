@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewWater
+  m_Shader: {fileID: -6465566751694194690, guid: 95e899e5f14ff3443ae8bb9535348eb6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_0d30a211390046829a7e4098978e18d5_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0bcad9b84d1dbc54caae7dec36e6c7b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_1e5c3f9ae4f7452a809441e1c8eef557_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: c79b2ff7e68b1e7428fb0a4254710e10, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_209e23af67394c56b4bf7bd49763fe7c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: af94d1e564412174e8f2c8aeb321e5ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2167343f945d49d8b1c54ef7a8537b83_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 5c29e84562e59294ab6126b0c3eb5a67, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_68c82357737542ad83df93fa63eeb3a8_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: c8412b46f705ff34d9e360dde597f68a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_7058a9f12ade45e1bb1569dae64cf8ef_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 2b5a3202ed73d984092c36271cf1145c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_b91714a5f8e041a99cdb1593c7dfe728_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 7da1df07e8d0b504fad027d86d91a0eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c1ed983b2e9b4403a83f94cf710a4f89_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c4e371e2112b4d65ae2de57a82345549_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0bcad9b84d1dbc54caae7dec36e6c7b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c68c60aedb3340a3a0e89d7f8a26ce0b_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: c1a66b5fc5d906648b10c54c7353cdb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_dc72fdabc21e4a709e54adaa828a5e1e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 2926e5671b551644c91a0235cedb5dc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_e89f998ad69a43d693c9b04549b7b02f_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 5c29e84562e59294ab6126b0c3eb5a67, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ea877eeec3984bb0b91fe545529952ad_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 9cb00a64bc25a914180a3c7b03ddded2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterTexture:
+        m_Texture: {fileID: 2800000, guid: 2b5a3202ed73d984092c36271cf1145c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Fish: 0.1
+    - _FishFloatPower: 0.05
+    - _FishSpeed: 0.1
+    - _HologramSpeed: 2
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SecondFishSpeed: 0.15
+    - _WaterTransparency: 0.2
+    m_Colors:
+    - _FishPower: {r: 0.01, g: 0, b: 0, a: 0}
+    - _HologramTiling: {r: 0, g: 200, b: 0, a: 0}
+    - _Vector2: {r: 0.11, g: 0.37, b: 0, a: 0}
+    - _WaterColor: {r: 0, g: 1.5554963, b: 2, a: 1}
+    - _WavePowr: {r: 0.1, g: 0.1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &8679826028027251154
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 10
