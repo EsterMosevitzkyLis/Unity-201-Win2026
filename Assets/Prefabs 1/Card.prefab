@@ -211,6 +211,10 @@ MonoBehaviour:
   target: {fileID: 2418793775802894383}
   hoverScale: 1.1
   speed: 10
+  hasSelectionSlider: 0
+  targetImage: {fileID: 0}
+  sliderSpeed: 5
+  sliderProperty: _SelectSlider
 --- !u!1 &6609568028454125512
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +854,10 @@ MonoBehaviour:
   target: {fileID: 2418793775802894383}
   hoverScale: 1.1
   speed: 10
+  hasSelectionSlider: 1
+  targetImage: {fileID: 352249657821419870}
+  sliderSpeed: 5
+  sliderProperty: _SelectSlider
 --- !u!114 &8861730661933326119
 MonoBehaviour:
   m_ObjectHideFlags: 0

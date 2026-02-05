@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _CardBackground:
-        m_Texture: {fileID: 2800000, guid: a1a50a09e150ff24ca1fb31f94aeba1d, type: 3}
+        m_Texture: {fileID: 2800000, guid: a4f5e41f369c8fb458b544ad2bc97367, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CardFace:
@@ -40,8 +40,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2e9209449e944573abd570fad5ff7271_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: aea58951974fc7a468abac1560230297, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_30bb39f0c1224652b97a5924de5338f8_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: a1a50a09e150ff24ca1fb31f94aeba1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_651ec43aecc643ab9ce3a24674c07398_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 9ff84e39a6f270b479bc6516d749fd7d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6e4cc14689b846659a04e45a59a5353e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 282b66437b1038d4b9f7a9bd44cbfd01, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_ec0fa2a60fd9491eb36c5a5913a9cfc0_Texture_1_Texture2D:
@@ -63,9 +75,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
+    - _InnerBlur: 0.05
     - _NoiseSpeed: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SelectSlider: 0
     - _Speed: 0.01
     - _Stencil: 0
     - _StencilComp: 8
@@ -78,6 +92,7 @@ Material:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_1: {r: 0, g: 0, b: 0, a: 1}
+    - _SelectionColor: {r: 6.754405, g: 0, b: 13.92881, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7074377301079327888
