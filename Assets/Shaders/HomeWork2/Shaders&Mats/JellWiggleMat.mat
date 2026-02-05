@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2D_1a7ea3a65ab84120aef60bb402afd8b9_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f6d6a03ad7d371e43b26f170fbac2fbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_76a26e780e5b471c983ea3144b71966c_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 43f4e723f12227d42a4d5e92df8d675e, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -61,8 +65,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 2
-    - _WiggleStrenght: 0.5
+    - _Speed: 1
+    - _WiggleStrenght: 1
     m_Colors:
     - _TentacleColor: {r: 0, g: 0.6822906, b: 1, a: 1}
   m_BuildTextureStacks: []
