@@ -40,6 +40,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 5c29e84562e59294ab6126b0c3eb5a67, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_636f3cf7558049ee8c2873742cd7573e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_68c82357737542ad83df93fa63eeb3a8_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: c8412b46f705ff34d9e360dde597f68a, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -94,9 +98,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Appearing: 1
     - _Fish: 0.1
     - _FishFloatPower: 0.05
     - _FishSpeed: 0.1
+    - _FresnalPower: 4.09
     - _HologramSpeed: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -104,6 +110,7 @@ Material:
     - _WaterTransparency: 0.2
     m_Colors:
     - _FishPower: {r: 0.01, g: 0, b: 0, a: 0}
+    - _HologramColor: {r: 0, g: 213.64249, b: 766.9961, a: 0.7647059}
     - _HologramTiling: {r: 0, g: 200, b: 0, a: 0}
     - _Vector2: {r: 0.11, g: 0.37, b: 0, a: 0}
     - _WaterColor: {r: 0, g: 1.5554963, b: 2, a: 1}
