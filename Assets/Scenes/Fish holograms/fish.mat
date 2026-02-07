@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: water
-  m_Shader: {fileID: -6465566751694194690, guid: f6c10b18dd0c1824c9c4018e2df59b35, type: 3}
+  m_Name: fish
+  m_Shader: {fileID: -6465566751694194690, guid: 61ddf5c17d5b246418c951402d693cf9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,31 +23,19 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
+    - _SampleTexture2D_0a135948fad7457bb80d51efa17a7ad3_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 1b61c8b3affcc0a4894eea39f5211aab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_0af1bf13d1ef48e4b1bfe3658cb7008b_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: f602f50d0ec148c4094bae8d8b1de402, type: 3}
+    - _SampleTexture2D_766c10aea7144c18b8304535b241d779_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ba81f475c479cee4e83ab7c4909e312d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_100b4e9e89c14bc3bb256ab8cd143359_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
+    - _SampleTexture2D_7896d8b99cad4477b8c2ce80ca79d41a_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bea68a3d4983a444ba34ba0c12f518dd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_6ede49fdd7704555b1e6f2e0c3daf906_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 36a901fb984997b4bab7ed968c064062, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_d04dc7d1f3af4e3fa6f688087b3cf39b_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_e9e43bd1299748618b80b3488a1c0cee_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: e06cc55b7e6586e48ad1c19f7d1018e6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_f6a871c7ab1247409c4b7e46a2d08765_Texture_1_Texture2D:
+    - _SampleTexture2D_c08ba88c52824281ab32947605dc073b_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 36a901fb984997b4bab7ed968c064062, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -64,15 +52,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _distort_intensity: 0.1
-    - _scale: 1.5
-    - _speed: -1
+    m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _color: {r: 1.1447176, g: 0.33977652, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &8960142478485804909
+--- !u!114 &9154926492368391388
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
