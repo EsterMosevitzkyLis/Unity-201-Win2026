@@ -24,8 +24,36 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Fish:
+        m_Texture: {fileID: 2800000, guid: fccfc7f6c664ad0469fa8e99a319ca76, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line_Tex:
+        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 8677c398bc585454881d3e799135faa4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_13f30ea7eb764f71809117b99fdfba25_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: fccfc7f6c664ad0469fa8e99a319ca76, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_72a183e904974c66af0c68d7616f9e48_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: dbfb7dda6c8a5a242b2dcc04d4be1e0e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_80d98697c57a4c3a8a5e0971bc176810_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 023a7cff1c3130d4cba3e05988b6b6ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c434328031f34c1b9d2e58247ac7fd8d_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 50dc677e5bfd23544a5c456ffdefbea2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_e8e3caa0d8e34f388e48f87cf40d1055_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: fccfc7f6c664ad0469fa8e99a319ca76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Sec_Tex:
@@ -50,16 +78,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fade: 0.477
+    - _Fade: 1
     - _Noise_Strength: 0.25
-    - _Noise_scale: -4.48
+    - _Noise_scale: -6.66
     - _OffsetSpeed: 4.5
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Main_Color: {r: 0, g: 0.03104725, b: 0.4941687, a: 1}
-    - _Noise_speed: {r: 0.1, g: 0.01, b: 0, a: 0}
+    - _Color: {r: 0.31064817, g: 0.5616707, b: 0.8742138, a: 1}
+    - _Fish_Color: {r: 0.31064817, g: 0.5616707, b: 0.8742138, a: 1}
+    - _Main_Color: {r: 0, g: 0.3156935, b: 0.4792453, a: 1}
+    - _Noise_speed: {r: 0.17, g: 0.01, b: 0, a: 0}
     - _Noise_speed_1: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _Seaweed_Offset: {r: 0.19, g: 0.39, b: 0, a: 0}
+    - _Seaweed_Tiling: {r: 1.69, g: 1, b: 0, a: 0}
     - _Tiling: {r: 1, g: -70.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
