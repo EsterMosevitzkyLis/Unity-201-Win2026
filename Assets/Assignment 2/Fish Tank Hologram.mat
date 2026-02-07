@@ -36,9 +36,13 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _CircleMaskTexture:
+        m_Texture: {fileID: 2800000, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FishTexture:
         m_Texture: {fileID: 2800000, guid: 10f5632847a56fa46a6c952dd8b37710, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
     - _HologramMaskTexture:
         m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
@@ -53,10 +57,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_e362bf3235274583b2a715091ae41670_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 47332880f10dee4429534303790a8399, type: 3}
+        m_Texture: {fileID: 2800000, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Shape_Texture:
+        m_Texture: {fileID: 2800000, guid: 3432c377b165204419fbf640041bfd24, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triangle_Mask_Texture:
         m_Texture: {fileID: 2800000, guid: 3432c377b165204419fbf640041bfd24, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -66,8 +74,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _WaterTexture:
         m_Texture: {fileID: 2800000, guid: 1a0ca623281c12b44b8c40947f4d08ff, type: 3}
-        m_Scale: {x: 1, y: 0.73}
-        m_Offset: {x: 0.7, y: 0.91}
+        m_Scale: {x: 1.59, y: 0.88}
+        m_Offset: {x: -0.63, y: 0.9}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -83,20 +91,24 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 1
+    - _FishAmp: 0.1
     - _FishSwimSpeed: 1
-    - _FishSwimSpeedHoriz: 0.05
-    - _FishSwimSpeedVert: 0.03
+    - _FishSwimSpeedHoriz: 0.1
+    - _FishSwimSpeedVert: 0.02
     - _FlickerSpeed: 1
     - _Fresnel: 1
-    - _HolgramTileAmount: 150
-    - _HologramFlickerSpeed: -2
+    - _HolgramTileAmount: 160
+    - _HologramFlickerSpeed: 3.05
     - _NoiseSpeed: 1
     - _OverallAlpha: 0.44
+    - _StepAmount: 0.3
     - _Tiles: 150
+    - _WaveSpeed: 0.09
+    - _Wave_Amp: 0.1
     - _sPEED: 2
     m_Colors:
     - _Color: {r: 0, g: 0.7593487, b: 2.9960785, a: 1}
-    - _HolgramLineColor: {r: 0.14150941, g: 1.092128, b: 2, a: 1}
+    - _HolgramLineColor: {r: 0.48309007, g: 1.5561521, b: 1.735849, a: 1}
     - _Inside_Color: {r: 0.9433962, g: 0.00000014807442, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
