@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 5a0c4d6688d198b418e76d6728863b79
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3136
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec1bb6bf588cc1488d17db3dab72290
+      internalID: 677313490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_1
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 3136
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58880e2d2d3166e498ee84ea40391fb3
+      internalID: -1133021598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_2
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 3136
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca2d7a80e7672b4aaae3788187b8017
+      internalID: -1344926727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_3
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 3136
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97f44677bb005b4b80a4b4aeacd8b43
+      internalID: -192582071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33bce3095591214abf48ebec514a6ad
+      internalID: -97405672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_5
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 2688
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1c4877fbbdd6c4bba451038038350e
+      internalID: 568972398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_6
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2688
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca4895bf2d12064fa562de3f0458bc0
+      internalID: 644479127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_7
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2688
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d5479143d44984eac30e2d9cae4ce4
+      internalID: -1735659367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dea5812d06e30342baf6b01a30dc5a9
+      internalID: 668265441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_9
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 2240
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8cae1d005daa847b1343e0615a1297
+      internalID: 685003123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_10
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2240
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f6209e3e773c9409224539ae37c906
+      internalID: 1324473897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_11
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2240
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c142498d66ce8a649b8b77346cb6edaf
+      internalID: -373691719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe9d5f464bc3d643b0d14043bc61a78
+      internalID: 885461722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_13
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1792
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e354aeefe5c093a48a82e2ebff23cebb
+      internalID: 2094550287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_14
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 1792
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649cfd25825700e4ea27c23add2d794c
+      internalID: -915692003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_15
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1792
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e81455aa1f9c14eb4bf296effd1f18
+      internalID: -605234783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292e1b211f7d6f144924d2884360e71d
+      internalID: -1615538693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1344
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c0ec2c122a7db439d90e5960ddd8b2
+      internalID: 934232881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_18
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 1344
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88f7fe8a83c7c742b941ea98ddaa77e
+      internalID: 1096030607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_19
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1344
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb96ddae126307548a0db625c10ac17b
+      internalID: 592443462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdec45c1804d4bb41adf8faf5e7fe6db
+      internalID: 329684163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_21
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 896
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a235468a84f90f459ac98bc97ed872e
+      internalID: -7858377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_22
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 896
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dbab51f8741bd4d858e0f22490df8b
+      internalID: -584800141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_23
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 896
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840fdff710d302442a1fedc3ac968ab7
+      internalID: 161149185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1df857d6bc50a24d9615c7a91da1df3
+      internalID: -1812331284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_25
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 448
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b7f4d32dc13554db5c7699a3b5b43c
+      internalID: -1128753365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_26
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 448
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24143c2f984479e4c8f0f3b028fe05ef
+      internalID: 1505899901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_27
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 448
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69488bc9cdaaed44694c4338fa8a6b78
+      internalID: 467743987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetTurtleNoBackground_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 766
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cfea4dd42d65b47aae3dd4dc28b87e
+      internalID: -1429694871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7bf1b10129620d840b66df47160fa99c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":766.0,"y":448.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SpriteSheetTurtleNoBackground_0: 677313490
+      SpriteSheetTurtleNoBackground_1: -1133021598
+      SpriteSheetTurtleNoBackground_10: 1324473897
+      SpriteSheetTurtleNoBackground_11: -373691719
+      SpriteSheetTurtleNoBackground_12: 885461722
+      SpriteSheetTurtleNoBackground_13: 2094550287
+      SpriteSheetTurtleNoBackground_14: -915692003
+      SpriteSheetTurtleNoBackground_15: -605234783
+      SpriteSheetTurtleNoBackground_16: -1615538693
+      SpriteSheetTurtleNoBackground_17: 934232881
+      SpriteSheetTurtleNoBackground_18: 1096030607
+      SpriteSheetTurtleNoBackground_19: 592443462
+      SpriteSheetTurtleNoBackground_2: -1344926727
+      SpriteSheetTurtleNoBackground_20: 329684163
+      SpriteSheetTurtleNoBackground_21: -7858377
+      SpriteSheetTurtleNoBackground_22: -584800141
+      SpriteSheetTurtleNoBackground_23: 161149185
+      SpriteSheetTurtleNoBackground_24: -1812331284
+      SpriteSheetTurtleNoBackground_25: -1128753365
+      SpriteSheetTurtleNoBackground_26: 1505899901
+      SpriteSheetTurtleNoBackground_27: 467743987
+      SpriteSheetTurtleNoBackground_28: -1429694871
+      SpriteSheetTurtleNoBackground_3: -192582071
+      SpriteSheetTurtleNoBackground_4: -97405672
+      SpriteSheetTurtleNoBackground_5: 568972398
+      SpriteSheetTurtleNoBackground_6: 644479127
+      SpriteSheetTurtleNoBackground_7: -1735659367
+      SpriteSheetTurtleNoBackground_8: 668265441
+      SpriteSheetTurtleNoBackground_9: 685003123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

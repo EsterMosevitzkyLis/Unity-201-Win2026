@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JellWiggleMat
+  m_Name: JellyHeadMat
   m_Shader: {fileID: -6465566751694194690, guid: de85cf298ff3df140a29953308d09e41, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,12 +37,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5426ff7fedf52764f8c2674c4e0d95d4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_1a7ea3a65ab84120aef60bb402afd8b9_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: f6d6a03ad7d371e43b26f170fbac2fbb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_76a26e780e5b471c983ea3144b71966c_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 43f4e723f12227d42a4d5e92df8d675e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 89ec9145c545da0408bd1e6852a1ce1f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8a4c474ee60446a1b1bcd59b97ae91d6_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 36eeea1925f3e2b4aa6cd437dd6a839a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_f294de2e2665468b8ff259af85e816f5_Texture_1_Texture2D:
@@ -63,11 +71,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Dissolve: 1
+    - _HologramSpeed: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 1
     - _WiggleStrenght: 1
     m_Colors:
+    - _MainColor: {r: 0, g: 17.31389, b: 23.96863, a: 1}
     - _TentacleColor: {r: 0, g: 0.6822906, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
