@@ -11,6 +11,9 @@
         },
         {
             "m_Id": "8e248bc9c417428ba9412ab50be9fbb9"
+        },
+        {
+            "m_Id": "8c47864db73746c09eb3ccbbba480cc1"
         }
     ],
     "m_Keywords": [],
@@ -65,6 +68,9 @@
         },
         {
             "m_Id": "28ddedeb09ea4ca2a791f6dbe45bf086"
+        },
+        {
+            "m_Id": "51a04920e1b94cf290ec048b6fb340ab"
         }
     ],
     "m_GroupDatas": [],
@@ -138,6 +144,20 @@
                     "m_Id": "28ddedeb09ea4ca2a791f6dbe45bf086"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "51a04920e1b94cf290ec048b6fb340ab"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "3696f1ce5472405aa40d6f3db723a270"
+                },
+                "m_SlotId": 2
             }
         },
         {
@@ -663,6 +683,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "42fabf3fe37a46e4b23bea5a09107049",
+    "m_Id": 0,
+    "m_DisplayName": "FlickeringPower",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "44cfd86771ea4318a09afda5116df6bc",
     "m_Id": 2,
@@ -825,6 +860,42 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "51a04920e1b94cf290ec048b6fb340ab",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1234.728759765625,
+            "y": 387.4991760253906,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "42fabf3fe37a46e4b23bea5a09107049"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "8c47864db73746c09eb3ccbbba480cc1"
+    }
 }
 
 {
@@ -1335,6 +1406,46 @@
 {
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "8c47864db73746c09eb3ccbbba480cc1",
+    "m_Guid": {
+        "m_GuidSerialized": "bd37a085-1342-44b8-b74a-45454d80a109"
+    },
+    "m_Name": "FlickeringPower",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "FlickeringPower",
+    "m_DefaultReferenceName": "_FlickeringPower",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
+    "m_Value": 10.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "8e248bc9c417428ba9412ab50be9fbb9",
     "m_Guid": {
         "m_GuidSerialized": "f25afb63-b00e-4002-b273-bfc2f46969bf"
@@ -1717,6 +1828,9 @@
         },
         {
             "m_Id": "8e248bc9c417428ba9412ab50be9fbb9"
+        },
+        {
+            "m_Id": "8c47864db73746c09eb3ccbbba480cc1"
         }
     ]
 }

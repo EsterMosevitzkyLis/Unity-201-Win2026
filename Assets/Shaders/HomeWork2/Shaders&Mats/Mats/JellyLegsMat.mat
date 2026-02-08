@@ -42,7 +42,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_3d61eb4661b04fb1a2d73c39ab567488_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: e52114e37f0b81947a503998f70ece12, type: 3}
+        m_Texture: {fileID: 2800000, guid: 684c6fb3558817f40b56637a02fc7f13, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_64f9993b9d084f019720685d23708f09_Texture_1_Texture2D:
@@ -64,9 +64,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Dissolve: 0
+    - _FlickeringPower: 10
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WiggleForce: 0.08
+    - _WiggleForce: 0.05
     - _WiggleSpeed: 2
     m_Colors: []
   m_BuildTextureStacks: []
