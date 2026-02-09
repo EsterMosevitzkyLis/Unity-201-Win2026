@@ -4,22 +4,29 @@ using UnityEngine.UI;
 
 public class UIHoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [Header("Scale Settings")]
     public Transform target;
     public float hoverScale = 1.1f;
     public float speed = 10f;
 
-    [Header("Selection Slider (Target UI Image)")]
     public bool hasSelectionSlider = false;
     public Image targetImage;
     public float sliderSpeed = 5f;
     public string sliderProperty = "_SelectSlider";
 
-    Vector3 originalScale;
+    public bool enableHoverRotation = true;
+    public float hoverRotationAngle = 5f;
+    public float hoverRotationSpeed = 3f;
+
+    public bool hoverMuted = false;
+
+    Vector3 baseScale;
     Vector3 targetScale;
 
-    float currentSlider = 0f;
-    float targetSlider = 0f;
+    Quaternion baseRotation;
+    bool isHovered;
+
+    float currentSlider;
+    float targetSlider;
 
     Material instanceMaterial;
 
@@ -28,12 +35,12 @@ public class UIHoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         if (target == null)
             target = transform;
 
-        originalScale = target.localScale;
-        targetScale = originalScale;
+        baseScale = target.localScale;
+        targetScale = baseScale;
+        baseRotation = target.localRotation;
 
         if (hasSelectionSlider && targetImage != null)
         {
-            // Create a UNIQUE material instance for THIS Image
             instanceMaterial = Instantiate(targetImage.material);
             targetImage.material = instanceMaterial;
 
@@ -42,23 +49,40 @@ public class UIHoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 currentSlider = instanceMaterial.GetFloat(sliderProperty);
                 targetSlider = currentSlider;
             }
-            else
-            {
-                Debug.LogWarning($"Material does not have property {sliderProperty}");
-            }
         }
     }
 
     void Update()
     {
-        // Scale animation
+        if (hoverMuted) return;
+
         target.localScale = Vector3.Lerp(
             target.localScale,
             targetScale,
             Time.unscaledDeltaTime * speed
         );
 
-        // Shader slider animation (per UI Image)
+        if (enableHoverRotation)
+        {
+            if (isHovered)
+            {
+                float angle =
+                    Mathf.Sin(Time.unscaledTime * hoverRotationSpeed)
+                    * hoverRotationAngle;
+
+                target.localRotation =
+                    baseRotation * Quaternion.Euler(0f, 0f, angle);
+            }
+            else
+            {
+                target.localRotation = Quaternion.Lerp(
+                    target.localRotation,
+                    baseRotation,
+                    Time.unscaledDeltaTime * speed
+                );
+            }
+        }
+
         if (hasSelectionSlider && instanceMaterial != null)
         {
             currentSlider = Mathf.MoveTowards(
@@ -73,17 +97,50 @@ public class UIHoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        targetScale = originalScale * hoverScale;
+        if (hoverMuted) return;
 
-        if (hasSelectionSlider)
-            targetSlider = 1f;
+        isHovered = true;
+        targetScale = baseScale * hoverScale;
+        targetSlider = 1f;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        targetScale = originalScale;
+        if (hoverMuted) return;
 
-        if (hasSelectionSlider)
-            targetSlider = 0f;
+        isHovered = false;
+        targetScale = baseScale;
+        targetSlider = 0f;
+    }
+
+    public void SyncBaseState()
+    {
+        baseRotation = target.localRotation;
+        baseScale = target.localScale;
+        targetScale = baseScale;
+    }
+
+    public void MuteHover()
+    {
+        hoverMuted = true;
+        isHovered = false;
+
+        targetScale = baseScale;
+        target.localScale = baseScale;
+        target.localRotation = baseRotation;
+
+        targetSlider = 0f;
+        currentSlider = 0f;
+
+        if (instanceMaterial != null && instanceMaterial.HasProperty(sliderProperty))
+        {
+            instanceMaterial.SetFloat(sliderProperty, 0f);
+        }
+    }
+
+    public void UnmuteHover()
+    {
+        SyncBaseState();
+        hoverMuted = false;
     }
 }
