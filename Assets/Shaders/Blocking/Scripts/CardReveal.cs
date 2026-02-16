@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class CardReveal : MonoBehaviour
+public class CardReveal : MonoBehaviour , IPointerDownHandler
 {
     public GameObject backSide;
     public GameObject frontSide;
@@ -29,5 +30,10 @@ public class CardReveal : MonoBehaviour
         backSide.SetActive(false);
         frontSide.SetActive(true);
         Shader.SetActive(true);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
     }
 }
