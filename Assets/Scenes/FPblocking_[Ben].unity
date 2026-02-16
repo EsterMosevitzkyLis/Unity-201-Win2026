@@ -235,7 +235,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1406,9 +1406,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 210399219}
     m_Modifications:
+    - target: {fileID: 412385134462888926, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 151.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 412385134462888926, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 412385134462888926, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 653403634279989443, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -439523395, guid: 05ab4a96daa182b4b83e0bff2b09a9fb, type: 3}
+    - target: {fileID: 653403634279989443, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ae95939ee8bad4f9915ec9f9a3e3b0, type: 2}
     - target: {fileID: 2843667636834607516, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
       propertyPath: m_Name
       value: Card 1 - Normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965021787304902775, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7695483238949083237, guid: 8ee4a761ef92e8f418fe6df9cdc9b103, type: 3}
       propertyPath: m_Pivot.x
