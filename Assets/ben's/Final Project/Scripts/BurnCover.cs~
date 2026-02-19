@@ -1,0 +1,60 @@
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+
+[RequireComponent(typeof(Image))]
+public class UIImageMaterialValueLerper : MonoBehaviour
+{
+	[Header("Shader Property Name")]
+	[SerializeField] private string floatPropertyName = "_DissolveYPosition";
+
+	[Header("Lerp Settings")]
+	public float startValue = 0f;
+	public float endValue = 1f;
+	public float duration = 0.5f;
+
+	private Image image;
+	private Material runtimeMaterial;
+	private Coroutine currentRoutine;
+
+	private void Awake()
+	{
+		image = GetComponent<Image>();
+
+		// Create unique instance so other UI Images aren't affected
+		runtimeMaterial = Instantiate(image.material);
+		image.material = runtimeMaterial;
+
+		// Initialize with start value
+		runtimeMaterial.SetFloat(floatPropertyName, startValue);
+		Debug.Log(runtimeMaterial.GetFloat(floatPropertyName));
+	}
+
+	public void PlayLerp()
+	{
+		if (currentRoutine != null)
+			StopCoroutine(currentRoutine);
+
+		currentRoutine = StartCoroutine(LerpRoutine());
+	}
+
+	private IEnumerator LerpRoutine()
+	{
+		float time = 0f;
+
+		runtimeMaterial.SetFloat(floatPropertyName, startValue);
+
+		while (time < duration)
+		{
+			time += Time.deltaTime;
+			float t = time / duration;
+
+			float value = Mathf.Lerp(startValue, endValue, t);
+			runtimeMaterial.SetFloat(floatPropertyName, value);
+
+			yield return null;
+		}
+
+		runtimeMaterial.SetFloat(floatPropertyName, endValue);
+	}
+}
