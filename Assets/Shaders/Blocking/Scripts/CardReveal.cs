@@ -1,39 +1,62 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class CardReveal : MonoBehaviour , IPointerDownHandler
+public class CardReveal : MonoBehaviour
 {
-    public GameObject backSide;
-    public GameObject frontSide;
-    public GameObject Shader;
-    private bool revealed = false;
+    [Header("Parents")]
+    public GameObject backParent;
+    public GameObject frontParent;
+    public GameObject auraParent; // rarity glow behind card
+
     private Animator anim;
+    private bool revealed = false;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+
+        // Initial state
+        frontParent.SetActive(false);
+        auraParent.SetActive(false);
     }
 
-    public void Reveal()
+    // Hover start
+    void OnMouseEnter()
     {
         if (revealed) return;
 
-        Debug.Log("Reveal pressed");
+        // Animator will handle scale, shake, and faint glow
+        anim.SetBool("HoverBack", true);
+    }
+
+    // Hover end
+    void OnMouseExit()
+    {
+        if (revealed) return;
+
+        anim.SetBool("HoverBack", false);
+    }
+
+    // Click
+    void OnMouseDown()
+    {
+        if (revealed) return;
+
         revealed = true;
 
-        anim.SetBool("Revealed", true);
+        // stop hover animation
+        anim.SetBool("HoverBack", false);
+
+        // trigger flip/dissolve animation
+        anim.SetTrigger("RevealCard");
     }
 
-    // Called by Animation Event at mid-flip
+    // Called via Animation Event at mid-flip to swap sides
     public void SwapToFront()
     {
-        backSide.SetActive(false);
-        frontSide.SetActive(true);
-        Shader.SetActive(true);
-    }
+        backParent.SetActive(false);
+        frontParent.SetActive(true);
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        throw new System.NotImplementedException();
+        // Aura/rarity glow can also be activated via Animator or here
+        auraParent.SetActive(true);
     }
 }
