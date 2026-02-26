@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 736, y: 1330}
+  m_SizeDelta: {x: 525.7143, y: 950}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7734064491466937854
 CanvasRenderer:
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -152,7 +152,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1805201023379465847}
   m_Father: {fileID: 0}
@@ -198,7 +198,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 414.28574, y: 828.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3944473244419475400
 CanvasRenderer:
@@ -286,7 +286,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 414.28574, y: 828.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2850906348658779890
 CanvasRenderer:
@@ -544,7 +544,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1480120396806359163}
   m_Father: {fileID: 3277172758597834095}
@@ -909,15 +909,15 @@ RectTransform:
   m_GameObject: {fileID: 5889088664295290020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.81781256, y: 0.81781256, z: 0.81781256}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6049785826165839346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 1556, y: 2000.081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &398778303005562433
 CanvasRenderer:
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: -876546973899608171, guid: bcd4c2acfe519bf4db330b8ba4606822, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad63673abadbd394ca7620ea3be13db1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e15735d478ae87342b547fc1dc27b381, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -982,7 +982,7 @@ GameObject:
   - component: {fileID: 8052808870693405927}
   - component: {fileID: 815188975832187925}
   m_Layer: 5
-  m_Name: Moon (1)
+  m_Name: Focal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1005,7 +1005,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 414.28574, y: 828.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8038399091968819173
 CanvasRenderer:
@@ -1242,7 +1242,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 414.28574, y: 828.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4194698539470969597
 CanvasRenderer:
@@ -1356,7 +1356,7 @@ RectTransform:
   m_GameObject: {fileID: 6604306717639551445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.84973, y: 0.84973, z: 0.84973}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5380426146663881075}
@@ -1365,7 +1365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -490.96347}
+  m_AnchoredPosition: {x: 0, y: -342}
   m_SizeDelta: {x: 435.40268, y: 229.77191}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7655335483797740600
@@ -1483,7 +1483,7 @@ GameObject:
   - component: {fileID: 8042115870305221815}
   - component: {fileID: 5836673462584185775}
   m_Layer: 5
-  m_Name: image
+  m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1506,7 +1506,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580, y: 1160}
+  m_SizeDelta: {x: 414.28574, y: 828.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2099804956927043463
 CanvasRenderer:

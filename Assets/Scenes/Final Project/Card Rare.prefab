@@ -8,9 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 299448787301203958, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 698743964639175434, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ecb3dedcb9067e4d927827fc4d33eb1, type: 3}
     - target: {fileID: 1450885349353305494, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
       propertyPath: m_Name
-      value: Card
+      value: Card Rare
       objectReference: {fileID: 0}
     - target: {fileID: 3277172758597834095, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
       propertyPath: m_Pivot.x
@@ -92,6 +100,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4075649515393076908, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 317.14285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075649515393076908, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 335
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075649515393076908, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912500567106226716, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614268735583048699, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 580580c9cfa480d4c9b74063baf34a11, type: 3}
+    - target: {fileID: 7593116097585713829, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 317.14285
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593116097585713829, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593116097585713829, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042115870305221815, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7bd921fbc52be2449d1a8660f7714c1, type: 3}
+    - target: {fileID: 8052808870693405927, guid: 0fce9df7fddae62438f2adec8f679c16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ac11a7ce5a8afc4dbb447c14d796818, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
