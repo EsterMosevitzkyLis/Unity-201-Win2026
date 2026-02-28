@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frame  mat - epic
-  m_Shader: {fileID: -6465566751694194690, guid: bb0f93be987b6094c9a30b1dc8280792, type: 3}
+  m_Name: reveal effect mat
+  m_Shader: {fileID: -6465566751694194690, guid: 1ced494ed82c1404cb9b5e5bc296e9aa, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,10 +27,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _map:
-        m_Texture: {fileID: 2800000, guid: 240b6ee8e694fc0469d0c8da37b1d297, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -46,7 +42,6 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _Horizontal_Ripple_intensity: 0.05
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -54,10 +49,12 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _ripple_scale: 0.5
-    - _vertical_Ripple_intensity: 0.01
+    - _fade: 0
+    - _intensity: 0
+    - _opacity: 1
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1.498039, g: 1.498039, b: 1.498039, a: 1}
+    - _center: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

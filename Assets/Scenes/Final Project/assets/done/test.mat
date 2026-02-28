@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frame  mat - epic
-  m_Shader: {fileID: -6465566751694194690, guid: bb0f93be987b6094c9a30b1dc8280792, type: 3}
+  m_Name: test
+  m_Shader: {fileID: -6465566751694194690, guid: 1ced494ed82c1404cb9b5e5bc296e9aa, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,8 +27,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _map:
-        m_Texture: {fileID: 2800000, guid: 240b6ee8e694fc0469d0c8da37b1d297, type: 3}
+    - _SampleTexture2D_1024d94cfda04cb0836904df34023c1e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 78c022336532186458d10efc05d340f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -46,7 +46,6 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _Horizontal_Ripple_intensity: 0.05
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -54,10 +53,25 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _ripple_scale: 0.5
-    - _vertical_Ripple_intensity: 0.01
+    - _fade: 0.708
+    - _intensity: 0
+    - _opacity: 1
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 7.8931646, g: 0, b: 0, a: 1}
+    - _center: {r: 0.5, g: 0.845, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!114 &2025129743908912775
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 10

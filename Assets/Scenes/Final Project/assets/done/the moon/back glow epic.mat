@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frame  mat - epic
-  m_Shader: {fileID: -6465566751694194690, guid: bb0f93be987b6094c9a30b1dc8280792, type: 3}
+  m_Name: back glow epic
+  m_Shader: {fileID: -6465566751694194690, guid: bcd4c2acfe519bf4db330b8ba4606822, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,8 +27,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _map:
-        m_Texture: {fileID: 2800000, guid: 240b6ee8e694fc0469d0c8da37b1d297, type: 3}
+    - _SampleTexture2D_3defa867803d46d8aee70193cfcd545c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: e15735d478ae87342b547fc1dc27b381, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -46,7 +46,6 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _Horizontal_Ripple_intensity: 0.05
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -54,10 +53,11 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _ripple_scale: 0.5
-    - _vertical_Ripple_intensity: 0.01
+    - _aura_size_multiplier: 1
+    - _beams_limit: 0.3
+    - _outline_intensity: 0.02
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1.87451, g: 0.09037243, b: 0.02065965, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
