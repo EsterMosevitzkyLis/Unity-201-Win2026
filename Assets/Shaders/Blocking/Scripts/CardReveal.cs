@@ -5,58 +5,102 @@ public class CardReveal : MonoBehaviour
     [Header("Parents")]
     public GameObject backParent;
     public GameObject frontParent;
-    public GameObject auraParent; // rarity glow behind card
+    public GameObject auraParent;
+
+    [Header("Tilt")]
+    public Transform tiltPivot; // child object (NOT animated)
+    public float maxTiltAngle = 15f;
+    public float tiltSpeed = 10f;
 
     private Animator anim;
     private bool revealed = false;
+    private bool isMouseOver = false;
+    private Quaternion targetRotation;
+
+    private Collider2D cardCollider;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+        cardCollider = GetComponent<Collider2D>();
 
-        // Initial state
         frontParent.SetActive(false);
         auraParent.SetActive(false);
+
+        if (tiltPivot == null)
+            Debug.LogError("TiltPivot not assigned!");
+
+        if (cardCollider == null)
+            Debug.LogError("Collider2D missing on this object!");
     }
 
-    // Hover start
     void OnMouseEnter()
     {
-        if (revealed) return;
+        isMouseOver = true;
 
-        // Animator will handle scale, shake, and faint glow
-        anim.SetBool("HoverBack", true);
+        if (!revealed)
+            anim.SetBool("HoverBack", true);
     }
 
-    // Hover end
     void OnMouseExit()
     {
-        if (revealed) return;
+        isMouseOver = false;
 
-        anim.SetBool("HoverBack", false);
+        if (!revealed)
+            anim.SetBool("HoverBack", false);
     }
 
-    // Click
     void OnMouseDown()
     {
         if (revealed) return;
 
         revealed = true;
 
-        // stop hover animation
         anim.SetBool("HoverBack", false);
-
-        // trigger flip/dissolve animation
         anim.SetTrigger("RevealCard");
     }
 
-    // Called via Animation Event at mid-flip to swap sides
     public void SwapToFront()
     {
         backParent.SetActive(false);
         frontParent.SetActive(true);
-
-        // Aura/rarity glow can also be activated via Animator or here
         auraParent.SetActive(true);
+    }
+
+    void Update()
+    {
+        if (!revealed || tiltPivot == null)
+            return;
+
+        if (isMouseOver)
+            CalculateMouseTilt();
+        else
+            targetRotation = Quaternion.identity;
+
+        tiltPivot.localRotation = Quaternion.Lerp(
+            tiltPivot.localRotation,
+            targetRotation,
+            Time.deltaTime * tiltSpeed
+        );
+    }
+
+    void CalculateMouseTilt()
+    {
+        // Get mouse world position
+        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorld.z = tiltPivot.position.z; // match pivot Z
+
+        // X difference from pivot
+        float deltaX = mouseWorld.x - tiltPivot.position.x;
+
+        // Optional scaling factor to control max tilt
+        float factor = 0.5f; // adjust to taste
+        float yRotation = -deltaX * maxTiltAngle / factor;
+
+        // Clamp to maxTiltAngle
+        yRotation = Mathf.Clamp(yRotation, -maxTiltAngle, maxTiltAngle);
+
+        // Apply rotation
+        targetRotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 }
