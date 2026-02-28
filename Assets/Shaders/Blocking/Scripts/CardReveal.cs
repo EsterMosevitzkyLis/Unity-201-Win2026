@@ -9,7 +9,7 @@ public class CardReveal : MonoBehaviour
 
     [Header("Tilt")]
     public Transform tiltPivot; // child object (NOT animated)
-    public float maxTiltAngle = 15f;
+    public float maxTiltAngle = 30f; // Updated to 30 degrees
     public float tiltSpeed = 10f;
 
     private Animator anim;
@@ -24,8 +24,6 @@ public class CardReveal : MonoBehaviour
         anim = GetComponent<Animator>();
         cardCollider = GetComponent<Collider2D>();
 
-        frontParent.SetActive(false);
-        auraParent.SetActive(false);
 
         if (tiltPivot == null)
             Debug.LogError("TiltPivot not assigned!");
@@ -63,8 +61,6 @@ public class CardReveal : MonoBehaviour
     public void SwapToFront()
     {
         backParent.SetActive(false);
-        frontParent.SetActive(true);
-        auraParent.SetActive(true);
     }
 
     void Update()
@@ -86,21 +82,22 @@ public class CardReveal : MonoBehaviour
 
     void CalculateMouseTilt()
     {
-        // Get mouse world position
-        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorld.z = tiltPivot.position.z; // match pivot Z
+        // 1. Give the mouse position the correct Z-depth before converting to world space
+        Vector3 mouseScreen = Input.mousePosition;
+        mouseScreen.z = Mathf.Abs(Camera.main.transform.position.z - tiltPivot.position.z);
+        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(mouseScreen);
 
-        // X difference from pivot
-        float deltaX = mouseWorld.x - tiltPivot.position.x;
+        // 2. Measure from the true CENTER of the card, not the pivot transform
+        float deltaX = mouseWorld.x - cardCollider.bounds.center.x;
 
-        // Optional scaling factor to control max tilt
-        float factor = 0.5f; // adjust to taste
-        float yRotation = -deltaX * maxTiltAngle / factor;
+        // 3. Normalize based on the card's half-width (-1 at far left, 1 at far right)
+        float normalizedX = deltaX / cardCollider.bounds.extents.x;
+        normalizedX = Mathf.Clamp(normalizedX, -1f, 1f);
 
-        // Clamp to maxTiltAngle
-        yRotation = Mathf.Clamp(yRotation, -maxTiltAngle, maxTiltAngle);
+        // 4. Calculate rotation: Left edge = max tilt (30), Right edge = -max tilt (-30)
+        float yRotation = -normalizedX * maxTiltAngle;
 
-        // Apply rotation
+        // 5. Apply target rotation
         targetRotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 }
