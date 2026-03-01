@@ -758,7 +758,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.23, z: 0.25}
+  m_LocalScale: {x: 0.16, y: 0.2, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1710471163}
@@ -809,8 +809,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88433e1b3dab6694387631aa8fa1700b, type: 3}
+  m_SortingOrder: -5
+  m_Sprite: {fileID: 21300000, guid: c982119ecc2a4064097f1e9dc4cc7b71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 388165853}
   - component: {fileID: 388165852}
   m_Layer: 0
-  m_Name: HecateArtifact
+  m_Name: VolvaArtifact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1366,6 +1366,11 @@ MonoBehaviour:
   tiltPivot: {fileID: 442412543}
   maxTiltAngle: 40
   tiltSpeed: 5
+  hoverShakeAmount: 1
+  hoverShakeSpeed: 20
+  clickShakeAmount: 4
+  clickShakeDuration: 0.25
+  clickShakeSpeed: 40
 --- !u!4 &388165855
 Transform:
   m_ObjectHideFlags: 0
@@ -2248,6 +2253,11 @@ MonoBehaviour:
   tiltPivot: {fileID: 1570278163}
   maxTiltAngle: 40
   tiltSpeed: 5
+  hoverShakeAmount: 1
+  hoverShakeSpeed: 20
+  clickShakeAmount: 4
+  clickShakeDuration: 0.25
+  clickShakeSpeed: 40
 --- !u!61 &577224290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3005,7 +3015,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.23, z: 0.25}
+  m_LocalScale: {x: 0.17, y: 0.2, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039128878}
@@ -3056,8 +3066,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88433e1b3dab6694387631aa8fa1700b, type: 3}
+  m_SortingOrder: -5
+  m_Sprite: {fileID: 21300000, guid: 5fbaad1a48632e4449ba290633c3cc86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3173,7 +3183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1039128878
 Transform:
   m_ObjectHideFlags: 0
@@ -3385,6 +3395,11 @@ MonoBehaviour:
   tiltPivot: {fileID: 1159637984}
   maxTiltAngle: 40
   tiltSpeed: 5
+  hoverShakeAmount: 3
+  hoverShakeSpeed: 25
+  clickShakeAmount: 4
+  clickShakeDuration: 0.25
+  clickShakeSpeed: 40
 --- !u!4 &1079686132
 Transform:
   m_ObjectHideFlags: 0
@@ -4015,7 +4030,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: ee23bd73d6bfc2c47bec5aa348cc314d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4201,7 +4216,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.23, z: 0.25}
+  m_LocalScale: {x: 0.15, y: 0.19, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075272808}
@@ -4252,8 +4267,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88433e1b3dab6694387631aa8fa1700b, type: 3}
+  m_SortingOrder: -5
+  m_Sprite: {fileID: 21300000, guid: 5fbaad1a48632e4449ba290633c3cc86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4404,7 +4419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1710471163
 Transform:
   m_ObjectHideFlags: 0
@@ -4948,7 +4963,7 @@ GameObject:
   - component: {fileID: 1859729898}
   - component: {fileID: 1859729899}
   m_Layer: 0
-  m_Name: Loki
+  m_Name: VolvaStaff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5885,7 +5900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2075272808
 Transform:
   m_ObjectHideFlags: 0
