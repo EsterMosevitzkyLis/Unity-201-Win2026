@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: test
-  m_Shader: {fileID: -6465566751694194690, guid: 1ced494ed82c1404cb9b5e5bc296e9aa, type: 3}
+  m_Name: background glow
+  m_Shader: {fileID: -6465566751694194690, guid: bcd4c2acfe519bf4db330b8ba4606822, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,12 +27,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_09a220b7705140f48d39b1155c868571_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 0c1ef7da1a29f984994d7fb7bcedfcf2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_1024d94cfda04cb0836904df34023c1e_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 78c022336532186458d10efc05d340f2, type: 3}
+    - _SampleTexture2D_3defa867803d46d8aee70193cfcd545c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: e15735d478ae87342b547fc1dc27b381, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -57,25 +53,11 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _fade: 1
-    - _intensity: 0
-    - _opacity: 1
+    - _aura_size_multiplier: 1
+    - _beams_limit: 0.3
+    - _outline_intensity: 0
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 3.9465823, g: 0, b: 0, a: 1}
-    - _center: {r: 0.5, g: 0.82, b: 0, a: 0}
+    - _Color: {r: 1.87451, g: 0.09037243, b: 0.02065965, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &2025129743908912775
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
-  version: 10
