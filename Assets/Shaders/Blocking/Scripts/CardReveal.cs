@@ -9,7 +9,7 @@ public class CardReveal : MonoBehaviour
 
     [Header("Tilt")]
     public Transform tiltPivot;
-    public float maxTiltAngle = 30f;
+    public float maxTiltAngle = 10f;
     public float tiltSpeed = 10f;
 
     [Header("Back Shake")]
@@ -77,6 +77,9 @@ public class CardReveal : MonoBehaviour
     {
         backParent.SetActive(false);
         auraParent.SetActive(true);
+        anim.SetTrigger("AuraGlow");
+        anim.SetTrigger("ThorGlow");
+        anim.SetTrigger("VolvaGlow");
     }
 
     void Update()
