@@ -5,56 +5,61 @@ using System.Collections;
 [RequireComponent(typeof(Image))]
 public class UIImageMaterialValueLerper : MonoBehaviour
 {
-	[Header("Shader Property Name")]
-	[SerializeField] private string floatPropertyName = "_DissolveYPosition";
+    [Header("Shader Property Name")]
+    [SerializeField] private string floatPropertyName = "_DissolveYPosition";
 
-	[Header("Lerp Settings")]
-	public float startValue = 0f;
-	public float endValue = 1f;
-	public float duration = 0.5f;
+    [Header("Lerp Settings")]
+    public float startValue = 0f;
+    public float endValue = 1f;
+    public float duration = 0.5f;
 
-	private Image image;
-	private Material runtimeMaterial;
-	private Coroutine currentRoutine;
+    [Header("Delay Settings")]
+    public float delay = 0f;
 
-	private void Awake()
-	{
-		image = GetComponent<Image>();
+    private Image image;
+    private Material runtimeMaterial;
+    private Coroutine currentRoutine;
 
-		// Create unique instance so other UI Images aren't affected
-		runtimeMaterial = Instantiate(image.material);
-		image.material = runtimeMaterial;
+    void Awake()
+    {
+        image = GetComponent<Image>();
 
-		// Initialize with start value
-		runtimeMaterial.SetFloat(floatPropertyName, startValue);
-		Debug.Log(runtimeMaterial.GetFloat(floatPropertyName));
-	}
+        // Create unique material instance so it doesn't affect other UI
+        runtimeMaterial = Instantiate(image.material);
+        image.material = runtimeMaterial;
 
-	public void PlayLerp()
-	{
-		if (currentRoutine != null)
-			StopCoroutine(currentRoutine);
+        runtimeMaterial.SetFloat(floatPropertyName, startValue);
+    }
 
-		currentRoutine = StartCoroutine(LerpRoutine());
-	}
+    // ⭐ This is the method you trigger from the UnityEvent
+    public void PlayDissolve()
+    {
+        if (currentRoutine != null)
+            StopCoroutine(currentRoutine);
 
-	private IEnumerator LerpRoutine()
-	{
-		float time = 0f;
+        currentRoutine = StartCoroutine(LerpRoutine());
+    }
 
-		runtimeMaterial.SetFloat(floatPropertyName, startValue);
+    private IEnumerator LerpRoutine()
+    {
+        if (delay > 0f)
+            yield return new WaitForSecondsRealtime(delay);
 
-		while (time < duration)
-		{
-			time += Time.deltaTime;
-			float t = time / duration;
+        float time = 0f;
+        runtimeMaterial.SetFloat(floatPropertyName, startValue);
 
-			float value = Mathf.Lerp(startValue, endValue, t);
-			runtimeMaterial.SetFloat(floatPropertyName, value);
+        while (time < duration)
+        {
+            time += Time.unscaledDeltaTime;
 
-			yield return null;
-		}
+            float t = time / duration;
+            float value = Mathf.Lerp(startValue, endValue, t);
 
-		runtimeMaterial.SetFloat(floatPropertyName, endValue);
-	}
+            runtimeMaterial.SetFloat(floatPropertyName, value);
+
+            yield return null;
+        }
+
+        runtimeMaterial.SetFloat(floatPropertyName, endValue);
+    }
 }

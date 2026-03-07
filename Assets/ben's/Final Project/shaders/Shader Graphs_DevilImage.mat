@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-280400848440781463
+--- !u!114 &-5260529169346134663
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fire
-  m_Shader: {fileID: -6465566751694194690, guid: 2f4cdacee0044f1488c18446b998a933, type: 3}
+  m_Name: Shader Graphs_DevilImage
+  m_Shader: {fileID: -6465566751694194690, guid: f5ce68a35e43e2349ada4641188cc490, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,12 +37,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_73d91710a445411395ecc946ada4aedb_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 1895065b1c307da4bb408682bd98fb1a, type: 3}
+    - _MainTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_d8bfb35be01a45728d635309ef5761eb_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: a7ff24a0f3bd4dd4aaf9265ba8da09ba, type: 3}
+    - _SampleTexture2D_a44a4d0ac88d4f89bb046be491c32dae_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -61,6 +61,9 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    m_Colors:
+    - _Distortion_Range: {r: -0.01, g: 0.01, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Tilling: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 [RequireComponent(typeof(Image))]
-public class UIImageMaterialValueLerper : MonoBehaviour
+public class CardCoverDissolveAnimation : MonoBehaviour
 {
     [Header("Shader Property Name")]
     [SerializeField] private string floatPropertyName = "_DissolveYPosition";
@@ -14,26 +14,25 @@ public class UIImageMaterialValueLerper : MonoBehaviour
     public float duration = 0.5f;
 
     [Header("Delay Settings")]
-    public float delay = 0f; // delay before the lerp starts
+    public float delay = 0f;
 
     private Image image;
     private Material runtimeMaterial;
     private Coroutine currentRoutine;
 
-    private void Awake()
+    void Awake()
     {
         image = GetComponent<Image>();
 
-        // Create unique instance so other UI Images aren't affected
+        // Create unique material instance so it doesn't affect other UI
         runtimeMaterial = Instantiate(image.material);
         image.material = runtimeMaterial;
 
-        // Initialize with start value
         runtimeMaterial.SetFloat(floatPropertyName, startValue);
-        Debug.Log(runtimeMaterial.GetFloat(floatPropertyName));
     }
 
-    public void PlayLerp()
+    // ⭐ This is the method you trigger from the UnityEvent
+    public void PlayDissolve()
     {
         if (currentRoutine != null)
             StopCoroutine(currentRoutine);
@@ -43,19 +42,19 @@ public class UIImageMaterialValueLerper : MonoBehaviour
 
     private IEnumerator LerpRoutine()
     {
-        // Wait for delay if any
         if (delay > 0f)
-            yield return new WaitForSeconds(delay);
+            yield return new WaitForSecondsRealtime(delay);
 
         float time = 0f;
         runtimeMaterial.SetFloat(floatPropertyName, startValue);
 
         while (time < duration)
         {
-            time += Time.deltaTime;
-            float t = time / duration;
+            time += Time.unscaledDeltaTime;
 
+            float t = time / duration;
             float value = Mathf.Lerp(startValue, endValue, t);
+
             runtimeMaterial.SetFloat(floatPropertyName, value);
 
             yield return null;

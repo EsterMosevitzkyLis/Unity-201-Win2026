@@ -1,0 +1,225 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+
+public class DevilCard : MonoBehaviour,
+    IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
+{
+    [Header("Float")]
+    public float floatAmplitude = 8f;
+    public float floatSpeed = 1f;
+
+    [Header("Idle Shake")]
+    public float idleShakePos = 0.8f;
+    public float idleShakeRot = 0.6f;
+    public float idleSpeedMult = 1f;
+
+    [Header("Hover Shake")]
+    public float hoverShakePos = 4f;
+    public float hoverShakeRot = 5f;
+    public float hoverSpeedMult = 1.8f;
+
+    [Header("Click Rage Shake")]
+    public float rageShakePos = 12f;
+    public float rageShakeRot = 18f;
+    public float rageSpeedMult = 3.5f;
+    public float rageRiseDuration = 1f;    // Time to reach max rage
+    public float rageReturnDuration = 0.8f; // Time to return to normal
+
+    [Header("Boop Effect")]
+    public float boopScaleAmount = 1.05f;      // extra scale multiplier at peak
+    public float boopShakeMultiplier = 1.5f;   // how much stronger shake during boop
+    public float boopDuration = 0.12f;         // boop duration in seconds
+
+    [Header("Base Shake Speed")]
+    public float baseShakeSpeed = 35f;
+
+    [Header("Scale")]
+    public float hoverScale = 1.1f;
+    public float rageScale = 1.3f;
+    public float scaleSpeed = 12f;
+
+    [Header("Events")]
+    public UnityEvent OnRagePeak;
+
+    RectTransform rect;
+    Vector2 startPos;
+    Quaternion startRot;
+    Vector3 startScale;
+
+    bool hovering;
+    bool isRaged = false;
+    bool rageDone = false;
+    bool peakTriggered = false;
+
+    float rageTimer = 0f;
+    float seed;
+
+    // Boop control
+    float boopTimer = 0f;
+    bool boopActive = false;
+
+    void Awake()
+    {
+        rect = GetComponent<RectTransform>();
+        startPos = rect.anchoredPosition;
+        startRot = rect.localRotation;
+        startScale = rect.localScale;
+        seed = Random.value * 10f;
+    }
+
+    void Update()
+    {
+        float t = Time.unscaledTime + seed;
+
+        // ----------------------------
+        // FLOATING BASE POSITION
+        // ----------------------------
+        float idleY = Mathf.Sin(t * floatSpeed) * floatAmplitude;
+        Vector2 idlePos = startPos + new Vector2(0, idleY);
+
+        // ----------------------------
+        // SHAKE CALCULATION
+        // ----------------------------
+        float posShake = 0f;
+        float rotShake = 0f;
+        float speedMult = 0f;
+
+        if (isRaged)
+        {
+            // Rising phase
+            if (rageTimer > 0f)
+            {
+                float rageProgress = 1f - Mathf.Clamp01(rageTimer / rageRiseDuration);
+                posShake = Mathf.Lerp(0f, rageShakePos, rageProgress);
+                rotShake = Mathf.Lerp(0f, rageShakeRot, rageProgress);
+                speedMult = Mathf.Lerp(0f, rageSpeedMult, rageProgress);
+
+                rageTimer -= Time.unscaledDeltaTime;
+
+                // 🔥 Peak Event & Boop start
+                if (!peakTriggered && rageProgress >= 0.98f)
+                {
+                    peakTriggered = true;
+                    OnRagePeak?.Invoke();
+
+                    boopActive = true;
+                    boopTimer = boopDuration;
+                }
+            }
+            else
+            {
+                // Return phase
+                float returnProgress = Mathf.Clamp01(-rageTimer / rageReturnDuration);
+                posShake = Mathf.Lerp(rageShakePos, 0f, returnProgress);
+                rotShake = Mathf.Lerp(rageShakeRot, 0f, returnProgress);
+                speedMult = Mathf.Lerp(rageSpeedMult, 1f, returnProgress);
+
+                rageTimer -= Time.unscaledDeltaTime;
+
+                if (returnProgress >= 1f)
+                {
+                    isRaged = false;
+                    rageDone = true;
+                    hovering = false;
+                }
+            }
+
+            // ----------------------------
+            // BOOP EFFECT
+            // ----------------------------
+            if (boopActive)
+            {
+                boopTimer -= Time.unscaledDeltaTime;
+
+                float boop01 = Mathf.Clamp01(boopTimer / boopDuration);
+                float boopScaleFactor = 1f + (boopScaleAmount - 1f) * boop01;
+
+                // Apply boop scale multiplicatively
+                rect.localScale *= boopScaleFactor;
+
+                // Boost shake during boop
+                posShake *= boopShakeMultiplier;
+                rotShake *= boopShakeMultiplier;
+
+                if (boopTimer <= 0f)
+                    boopActive = false;
+            }
+        }
+        else if (!rageDone)
+        {
+            // Hover / Idle shake
+            if (hovering)
+            {
+                posShake = hoverShakePos;
+                rotShake = hoverShakeRot;
+                speedMult = hoverSpeedMult;
+            }
+            else
+            {
+                posShake = idleShakePos;
+                rotShake = idleShakeRot;
+                speedMult = idleSpeedMult;
+            }
+        }
+
+        // ----------------------------
+        // APPLY SHAKE & FLOAT
+        // ----------------------------
+        float shakeT = Time.unscaledTime * baseShakeSpeed * speedMult;
+        float shakeX = Mathf.Sin(shakeT * 2.1f) * posShake;
+        float shakeY = Mathf.Sin(shakeT * 2.7f) * posShake;
+        float shakeRot = Mathf.Sin(shakeT * 3.3f) * rotShake;
+
+        rect.anchoredPosition = idlePos + new Vector2(shakeX, shakeY);
+        rect.localRotation = startRot * Quaternion.Euler(0, 0, shakeRot);
+
+        // ----------------------------
+        // SCALE CALCULATION
+        // ----------------------------
+        Vector3 targetScale = startScale;
+
+        if (isRaged)
+        {
+            if (rageTimer > 0f)
+            {
+                float rageProgress = 1f - Mathf.Clamp01(rageTimer / rageRiseDuration);
+                targetScale = Vector3.Lerp(startScale, startScale * rageScale, rageProgress);
+            }
+            else
+            {
+                float returnProgress = Mathf.Clamp01(-rageTimer / rageReturnDuration);
+                targetScale = Vector3.Lerp(startScale * rageScale, startScale, returnProgress);
+            }
+        }
+        else if (hovering)
+        {
+            targetScale = startScale * hoverScale;
+        }
+
+        // Apply smooth scale
+        rect.localScale = Vector3.Lerp(rect.localScale, targetScale, Time.unscaledDeltaTime * scaleSpeed);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (isRaged || rageDone) return;
+        hovering = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (isRaged || rageDone) return;
+        hovering = false;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (isRaged || rageDone) return;
+
+        isRaged = true;
+        rageTimer = rageRiseDuration; // start rise phase
+        rageDone = false;
+        peakTriggered = false;
+    }
+}
