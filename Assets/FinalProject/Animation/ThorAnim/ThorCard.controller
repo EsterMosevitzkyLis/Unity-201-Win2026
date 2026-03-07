@@ -1,17 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-8251403211030700302
+--- !u!1102 &-9084119816243665044
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FlipReveal
+  m_Name: HoverBackThor
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 981740311572731911}
+  - {fileID: 5759683095577647250}
+  - {fileID: -3469903708805843677}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -21,13 +22,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cd364a6f64c6e0349942de39b25d0415, type: 2}
+  m_Motion: {fileID: 7400000, guid: e2ae51aa63f211d48854c596145d5118, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-7705784221358895999
+--- !u!1101 &-3823456247228338457
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,10 +37,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: HoverBack
+    m_ConditionEvent: ThorGlow
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6593296857706759321}
+  m_DstState: {fileID: -3771034208730290570}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -52,14 +53,14 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &-3818250293209209623
+--- !u!1102 &-3771034208730290570
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GlowAnimation
+  m_Name: ThorGlow
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,7 +73,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 17450edefa8bb3346a44a8ba1b427bad, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8bdb709b7e1d73245acd5d0764800d76, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -88,17 +89,17 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 7552744015239914882}
-    m_Position: {x: 270, y: 50, z: 0}
+    m_State: {fileID: 4901005821803173504}
+    m_Position: {x: 520, y: 60, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6593296857706759321}
-    m_Position: {x: 520, y: 0, z: 0}
+    m_State: {fileID: -9084119816243665044}
+    m_Position: {x: 360, y: -10, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -8251403211030700302}
-    m_Position: {x: 790, y: 30, z: 0}
+    m_State: {fileID: 3992040102698261375}
+    m_Position: {x: 250, y: 60, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3818250293209209623}
-    m_Position: {x: 1010, y: 80, z: 0}
+    m_State: {fileID: -3771034208730290570}
+    m_Position: {x: 680, y: -10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -108,8 +109,8 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 7552744015239914882}
---- !u!1101 &-227851462719182236
+  m_DefaultState: {fileID: 3992040102698261375}
+--- !u!1101 &-3469903708805843677
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,11 +118,11 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: RevealCard
+  - m_ConditionMode: 2
+    m_ConditionEvent: HoverBack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -8251403211030700302}
+  m_DstState: {fileID: 3992040102698261375}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -140,7 +141,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LokiCard
+  m_Name: ThorCard
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: HoverBack
@@ -155,7 +156,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: AuraGlow
+  - m_Name: ThorGlow
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -174,7 +175,34 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &981740311572731911
+--- !u!1102 &3992040102698261375
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IdleThor
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 4128909780204025623}
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: a60d8d35e36b96a4395289577120223d, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1101 &4128909780204025623
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,35 +211,34 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: AuraGlow
+    m_ConditionEvent: HoverBack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -3818250293209209623}
+  m_DstState: {fileID: -9084119816243665044}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 1
+  m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &6593296857706759321
+--- !u!1102 &4901005821803173504
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HoverBack
+  m_Name: FlipRevealThor
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -227851462719182236}
-  - {fileID: 7626788665522242043}
+  - {fileID: -3823456247228338457}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -221,40 +248,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 27d3ca8e6750faa47aaa1b2f11650db7, type: 2}
+  m_Motion: {fileID: 7400000, guid: d4e434954bf3c5e4f903df9dff422b65, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7552744015239914882
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -7705784221358895999}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 02ee819cac6ddf247a89d0c5e86f9dfe, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1101 &7626788665522242043
+--- !u!1101 &5759683095577647250
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,11 +262,11 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: HoverBack
+  - m_ConditionMode: 1
+    m_ConditionEvent: RevealCard
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 7552744015239914882}
+  m_DstState: {fileID: 4901005821803173504}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
