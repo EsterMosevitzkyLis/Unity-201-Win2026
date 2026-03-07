@@ -6,6 +6,7 @@ public class CardTilt : MonoBehaviour
     [Header("Tilt Settings")]
     [SerializeField] private float _maxTiltAngle = 12f;
     [SerializeField] private float _rotationSmoothSpeed = 10f;
+    [SerializeField] private bool _invert;
 
     [Header("Optional")]
     [SerializeField] private Camera _targetCamera;
@@ -64,8 +65,8 @@ public class CardTilt : MonoBehaviour
                 normalizedY = Mathf.Clamp(localHitPoint.y / localBounds.extents.y, -1f, 1f);
             }
 
-            float tiltAroundX = -normalizedY * _maxTiltAngle;
-            float tiltAroundY = normalizedX * _maxTiltAngle;
+            float tiltAroundX = -normalizedY * _maxTiltAngle* (_invert ? -1 : 1);
+            float tiltAroundY = normalizedX * _maxTiltAngle* (_invert ? -1 : 1);
 
             Quaternion tiltRotation = Quaternion.Euler(tiltAroundX, tiltAroundY, 0f);
             _targetLocalRotation = _initialLocalRotation * tiltRotation;
