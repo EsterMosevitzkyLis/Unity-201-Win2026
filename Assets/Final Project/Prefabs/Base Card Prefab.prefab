@@ -3309,7 +3309,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     LimitedTimeResetValue: 1
-    LimitedTimeLeft: 0
+    LimitedTimeLeft: 6
     NoiseFrequencyMin: {x: 10, y: 10, z: 10}
     NoiseFrequencyMax: {x: 10, y: 10, z: 10}
     NoiseShiftMin: {x: 0, y: 0, z: 0}
@@ -5420,7 +5420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f348d0788542b4743877d317104af8da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardTilt
-  _maxTiltAngle: 5
+  _maxTiltAngle: 8
   _rotationSmoothSpeed: 5
   _invert: 1
   _targetCamera: {fileID: 0}
