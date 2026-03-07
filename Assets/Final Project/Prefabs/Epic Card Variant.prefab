@@ -20,6 +20,22 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 496944814818755373, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_Range
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 496944814818755373, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_Intensity
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 496944814818755373, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 884380529954801809, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 974066965927294989, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -43,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 1879746492287134509, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969720289509083691, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_text
+      value: Bloodshot
       objectReference: {fileID: 0}
     - target: {fileID: 2077889734526257398, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
@@ -108,6 +128,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: bacfb40c5b22f994d85ee4220b6235c8, type: 2}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.003712001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0037120006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0037119996
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.014273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891841932547099247, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27302
+      objectReference: {fileID: 0}
     - target: {fileID: 5409224959867740006, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -117,6 +161,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 72bd4ffee89abe447a82ce7dd32355fd, type: 2}
     - target: {fileID: 5760079308260814208, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936290895905728233, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264734208531979529, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264734208531979529, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2486ffe01460790428cf914c9f66c0e6, type: 2}
+    - target: {fileID: 6409192428566555901, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -140,6 +200,31 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7261027381282578396, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_text
+      value: You heal for 10% of the damage you deal, but take 10 damage after each
+        combat, as the weapon slowly feeds upon your life energy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456601099020398280, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456601099020398280, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456601099020398280, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713194785435589820, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713194785435589820, guid: 967f02d09959b864094f876062b8746f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a49f6ec3ac78dcb4c88fc15905be0ce4, type: 2}
     - target: {fileID: 9011366104137720034, guid: 967f02d09959b864094f876062b8746f, type: 3}
       propertyPath: m_SortingLayer
       value: 0
