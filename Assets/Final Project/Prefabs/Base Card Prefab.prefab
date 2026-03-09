@@ -5132,6 +5132,10 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3863799270559729085, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4626953745819715263, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -5157,32 +5161,52 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_text
+      value: Scrying Orb of Yog-Sototh
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_fontSize
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: f63196c9f060fbc4189607a6d6c5633f, type: 2}
+      objectReference: {fileID: 11400000, guid: 500491f4100c3dc4181ec73bb4d07a8c, type: 2}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontStyle
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2078481974322065317, guid: f63196c9f060fbc4189607a6d6c5633f, type: 2}
+      objectReference: {fileID: 5184522485075482918, guid: 500491f4100c3dc4181ec73bb4d07a8c, type: 2}
+    - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5336619542624489546, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -5219,6 +5243,10 @@ PrefabInstance:
     - target: {fileID: 6637397879063506047, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755819346342319838, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 6904522564998718795, guid: f551d19ed813cb8438c775311fcf7c63, type: 3}
       propertyPath: m_SortingLayer
@@ -5404,7 +5432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f348d0788542b4743877d317104af8da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardTilt
-  _maxTiltAngle: 12
+  _maxTiltAngle: 18
   _rotationSmoothSpeed: 5
   _invert: 0
   _targetCamera: {fileID: 0}
@@ -5420,7 +5448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f348d0788542b4743877d317104af8da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardTilt
-  _maxTiltAngle: 8
+  _maxTiltAngle: 10
   _rotationSmoothSpeed: 5
   _invert: 1
   _targetCamera: {fileID: 0}
