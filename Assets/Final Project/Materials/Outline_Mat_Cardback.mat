@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cardback Material
-  m_Shader: {fileID: -6465566751694194690, guid: 9912a13e830be4245815ec251beb7e4d, type: 3}
+  m_Name: Outline_Mat_Cardback
+  m_Shader: {fileID: -6465566751694194690, guid: 1e0a3c78ea4065b49a890f998073c732, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -64,16 +64,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_d3695a5169904a2f89d0d6fec763837f_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: edba4c487db4cb542a9185b120d072be, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_d496bbeae19244bb96ae77f326d404ba_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 9b271381f5dda6a4a85a4782a0f13bc2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_d3922f13838a4fa68a223d2b9ec05a41_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ac3c0dccedf09f3439cbf612977200af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture_Mask:
+        m_Texture: {fileID: 2800000, guid: 77cd2aeda1bdd2f4586705eaf5cac92e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Textyure_Mask_Gradient:
+        m_Texture: {fileID: 2800000, guid: 77cd2aeda1bdd2f4586705eaf5cac92e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -93,8 +97,12 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _Aura_Strength: 5
+    - _Bitmap_Resolution: 256
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _Blind_Intensity: 0
+    - _Border_Width: 0.6
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -108,11 +116,12 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Image_Scaling: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _Outline_Width_Max_In_Pixels: 3
+    - _Outline_Width_Min_In_Pixels: 1
     - _Parallax: 0.005
-    - _Pixelization_Bits: 256
+    - _Pulse_Speed: 4
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -126,13 +135,16 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
+    - _Aura_color: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Outline_Color: {r: 0.99371064, g: 0.9121037, b: 0.6156005, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _scroll_speed: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &6374484612036463307
+--- !u!114 &6182590644835753582
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
