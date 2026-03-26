@@ -7,19 +7,18 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Burning_Mat_fire
+  m_Name: Burning_Mat_fire 2
   m_Shader: {fileID: -6465566751694194690, guid: a93775fa30f65744c82b49cdfc98abd1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _ALPHATEST_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: TransparentCutout
+    RenderType: Opaque
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -48,15 +47,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaClip: 1
-    - _AlphaToMask: 1
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _CastShadows: 1
     - _Cull: 2
-    - _DissoloveAmout: 1
-    - _DissolveScale: 141
-    - _DissolveWidth: 0.03
+    - _DissoloveAmout: 0.2
+    - _DissolveScale: -344
+    - _DissolveWidth: 0.01
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _Metalic: 1
@@ -75,8 +74,8 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.53144646, b: 0.53144646, a: 1}
-    - _DissolveColor: {r: 901.96277, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 8, g: 5.4457273, b: 0, a: 1}
+    - _DissolveColor: {r: 675.5878, g: 569.47455, b: 0, a: 1}
     - _ScrollSpeed: {r: 0.1, g: 0.5, b: 0, a: 0}
     - _Tiling: {r: 0.7, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
